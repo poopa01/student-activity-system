@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities List - Student Activity System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Student Activity Management System</h1>
+        <nav id="main-navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="activities.html" class="nav-link">Activities List</a></li>
+                <li><a href="add-activity.html" class="nav-link">Add Activity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+    <section>
+        <h2>Registered Student Activities</h2>
+        <p>Below is the complete list of campus activities registered in the system:</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity ID</th>
+                        <th>Activity Title</th>
+                        <th>Category</th>
+                        <th>Activity Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ACT001</td>
+                        <td>AI Engineering Workshop</td>
+                        <td>Academic</td>
+                        <td>2026-11-15</td>
+                        <td><span class="badge badge-approved">Upcoming</span></td>
+                    </tr>
+                    <tr>
+                        <td>ACT002</td>
+                        <td>University Futsal Tournament</td>
+                        <td>Sports</td>
+                        <td>2026-11-20</td>
+                        <td><span class="badge badge-approved">Upcoming</span></td>
+                    </tr>
+                    <tr>
+                        <td>ACT003</td>
+                        <td>Campus Tree Planting Initiative</td>
+                        <td>Volunteer</td>
+                        <td>2026-10-05</td>
+                        <td><span class="badge badge-pending">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <p>&copy; 2026 Student Activity Management System.</p>
+    </footer>
+
+</body>
+</html>

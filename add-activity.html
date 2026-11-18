@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Activity - Student Activity System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Student Activity Management System</h1>
+        <nav id="main-navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="activities.html" class="nav-link">Activities List</a></li>
+                <li><a href="add-activity.html" class="nav-link">Add Activity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+    <section class="form-card">
+        <h2>Add New Student Activity</h2>
+        <p>Fill out the form below to register a new campus event.</p>
+        
+        <form action="save.php" method="POST">
+            <div class="form-group">
+                <label for="title">Activity Title:</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="e.g. AI & Robotics Workshop" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="category">Activity Category:</label>
+                <select id="category" name="category" class="form-control" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Volunteer">Volunteer</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="activity_date">Activity Date:</label>
+                <input type="date" id="activity_date" name="activity_date" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">Activity Description:</label>
+                <textarea id="description" name="description" class="form-control" rows="4" placeholder="Enter detailed activity description..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Add Activity</button>
+                <button type="reset" class="btn-submit" style="background-color: #64748B;">Clear Form</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Student Activity Management System.</p>
+    </footer>
+</body>
+</html>
